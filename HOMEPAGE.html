@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>BIODATA HTML CSS</title>
+	<style>
+		.welkam {
+			margin-top: 45px;
+			text-align: center;
+			font-family: "Footlight MT";
+			font-size: 95px;
+		}
+		.welkam {
+			background: url('https://i.pinimg.com/564x/25/e1/55/25e155e739967ac1486d5e585adf3ead.jpg');
+			
+		}
+		.p1 {
+			text-align: center;
+			font-family: "Times New Roman";
+			font-size: 25px;
+		}
+		.source {
+			font-style: italic;
+			text-align: right;
+		}
+		
+		body {
+			font-family: "Lato", sans-serif;
+		}
+
+		.sidenav {
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: #111;
+		  overflow-x: hidden;
+		  transition: 0.5s;
+		  padding-top: 60px;
+		}
+
+		.sidenav a {
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #818181;
+		  display: block;
+		  transition: 0.3s;
+		}
+
+		.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+			left: 50%;
+			right: 50%;
+			transform: translateX(-50%);
+		}
+
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="welkam">
+		<p>WELCOME!</p>
+	</div>
+	
+	<div class="source">
+		<p>Image Source: Pinterest</p>
+	</div>
+	
+	<div class="p1">
+		<p>This is a page that contains about myself, starting from my name, place of residence, date of birth, education, project, and more.</p>
+	</div>
+	
+	<div class="klik">
+		<p>coba klik ini deh :D</p>
+	</div>
+	
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="./ABOUT ME.html">About</a>
+	  <a href="./EDUCATION.html">Education</a>
+	  <a href="./PROJECTS.html">Projects</a>
+	  <a href="./CONTACT.html">Contact</a>
+	</div>
+
+	<div>
+		<span style="font-size:30px;cursor:pointer; display: block; margin: 0 auto;" onclick="openNav()">&#9776;</span>
+	</div>
+
+	<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
+	
+</body>
+</html>
